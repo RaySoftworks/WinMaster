@@ -1,0 +1,244 @@
+﻿<Window x:Class="Typhoon.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Typhoon"
+        mc:Ignorable="d"
+        
+        Title="WinMaster" 
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        Background="Transparent"
+        AllowsTransparency="True" 
+        Height="388" 
+        Width="540">
+
+    <Grid>
+        <Grid>
+            <Border 
+        x:Name="RootBorder"
+        CornerRadius="4,4,4,4"
+        BorderBrush="Black"
+        Background="#181e28"
+        BorderThickness="0" 
+        HorizontalAlignment="Left" 
+        Height="373" 
+        VerticalAlignment="Top" 
+        Width="526" Margin="4,5,0,0">
+                <Border.Effect>
+                    <DropShadowEffect/>
+                </Border.Effect>
+                <Grid>
+                    <Border 
+        x:Name="TopBorder" 
+        BorderBrush="Black" 
+        BorderThickness="0"
+        Background="#0d68e0"
+        CornerRadius="4,4,0,0"
+        HorizontalAlignment="Center" 
+        Height="42" 
+        VerticalAlignment="Top" 
+        Width="526" MouseDown="TopBorder_MouseDown">
+                        <Grid>
+                            <Button 
+                            Content="&#xE711;"
+                            Foreground="White"
+                            FontFamily="Segoe Mdl2 assets"
+                            HorizontalAlignment="Left" 
+                            Height="42"
+                            Style="{StaticResource ExitButton_Style}"
+                            Margin="472,0,0,0" 
+                            VerticalAlignment="Center" 
+                            Width="54" Click="Button_Click"/>
+                            <Label 
+                            Content="WinMaster"
+                            FontFamily="Bahnschrift SemiBold"
+                            HorizontalAlignment="Left"
+                            Foreground="AliceBlue"
+                            FontSize="12"
+                            Height="22" 
+                            Margin="41,0,0,0" 
+                            VerticalAlignment="Center" 
+                            Width="67"/>
+                            <Image x:Name="Ico" 
+                            HorizontalAlignment="Left" 
+                            Height="34" 
+                            Margin="4,0,0,0" 
+                            VerticalAlignment="Center" 
+                            Width="35" 
+                            RenderOptions.BitmapScalingMode="HighQuality"
+                            Source="ico/pendrive.png"/>
+                            <Button 
+                                Content=""
+                                Foreground="White"
+                                HorizontalAlignment="Left" 
+                                Height="42"
+                                Style="{StaticResource Info_Button}" 
+                                VerticalAlignment="Center" 
+                                Width="41" Click="Button_Click_1"/>
+                        </Grid>
+                    </Border>
+                    <Border 
+                        x:Name="UnderBorder" 
+                        BorderBrush="Black" 
+                        BorderThickness="0"
+                        Background="#0d68e0"
+                        CornerRadius="0,0,4,4"
+                        HorizontalAlignment="Center" 
+                        Height="22" 
+                        VerticalAlignment="Top" 
+                        Width="526" MouseDown="TopBorder_MouseDown" Margin="0,351,0,0">
+                        <Grid>
+                            <Label x:Name="usernameLabel" 
+                                Content="[USER] My UserName is Guest123456789"
+                                FontFamily="Bahnschrift SemiBold"
+                                HorizontalAlignment="Center"
+                                Foreground="AliceBlue"
+                                FontSize="10"
+                                Height="22" 
+                                VerticalAlignment="Center" 
+                                Width="484"/>
+                            <Image 
+                                HorizontalAlignment="Left" 
+                                Height="18" 
+                                Margin="3,0,0,0" 
+                                VerticalAlignment="Center" 
+                                Width="19" 
+                                RenderOptions.BitmapScalingMode="HighQuality"
+                                Source="ico/user.png"/>
+                            <Image x:Name="DragButtonLow" 
+                                Margin="505,0,0,0" 
+                                RenderOptions.BitmapScalingMode="HighQuality"
+                                Source="/expand-arrows.png"/>
+                        </Grid>
+                    </Border>
+                    <Button 
+            Content="Continue"
+            Foreground="White"
+            FontFamily="Bahnschrift SemiBold"
+            HorizontalAlignment="Left" 
+            Height="29"
+            Style="{StaticResource Button_Average}"
+            Margin="435,317,0,0" 
+            VerticalAlignment="Top" 
+            Width="81" Click="Button_Click_3"/>
+                    <Image x:Name="Tree" 
+                                HorizontalAlignment="Left" 
+                                Height="213" 
+                                Margin="10,96,0,0" 
+                                VerticalAlignment="Top" 
+                                Width="181" 
+                                RenderOptions.BitmapScalingMode="HighQuality"
+                                Source="ico/full-moon.png">
+                        <Image.Effect>
+                            <DropShadowEffect/>
+                        </Image.Effect>
+                    </Image>
+                    <Label 
+                                Content="Welcome To Typhoon Portable Version!"
+                                FontFamily="Bahnschrift Bold"
+                                HorizontalAlignment="Left"
+                                Foreground="AliceBlue"
+                                FontSize="58"
+                                Height="69" 
+                                Margin="169,96,0,0" 
+                                VerticalAlignment="Top" 
+                                Width="320"/>
+                    <Label 
+                        Content="WinMaster Portable Version!"
+                        FontFamily="Bahnschrift Bold"
+                        HorizontalAlignment="Left"
+                        Foreground="AliceBlue"
+                        FontSize="20"
+                        Height="63" 
+                        Margin="206,0,0,0" 
+                        VerticalAlignment="Center" 
+                        Width="310"/>
+                    <Image x:Name="Tree_Copy" 
+                        HorizontalAlignment="Left" 
+                        Height="56" 
+                        Margin="161,223,0,0" 
+                        VerticalAlignment="Top" 
+                        Width="56" 
+                        RenderOptions.BitmapScalingMode="HighQuality"
+                        Source="ico/star.png">
+                        <Image.Effect>
+                            <DropShadowEffect/>
+                        </Image.Effect>
+                    </Image>
+                </Grid>
+            </Border>
+        </Grid>
+        <Border x:Name="Credits" 
+        BorderBrush="#0d68e0" 
+        BorderThickness="2"
+        CornerRadius="4"
+        Background="#181e28"
+        HorizontalAlignment="Left" 
+        Height="184" 
+        VerticalAlignment="Top" 
+        Width="192" Margin="288,-189,0,0">
+            <Border.Effect>
+                <DropShadowEffect/>
+            </Border.Effect>
+            <Grid>
+                <Border 
+                        x:Name="TopBorder_Copy" 
+                        BorderBrush="Black" 
+                        BorderThickness="0"
+                        Background="#0d68e0"
+                        CornerRadius="4,4,0,0" 
+                        Height="42" 
+                        VerticalAlignment="Top" MouseDown="TopBorder_MouseDown" Margin="-1,0,0,0">
+                    <Grid>
+                        <Button 
+                                Content="&#xE711;"
+                                Foreground="White"
+                                FontFamily="Segoe Mdl2 assets"
+                                Style="{StaticResource ExitButton_Style}" Click="Button_Click_2" Margin="135,-2,-2,0"/>
+                        <Label 
+                                Content="Credits"
+                                FontFamily="Bahnschrift SemiBold"
+                                HorizontalAlignment="Left"
+                                Foreground="AliceBlue"
+                                FontSize="12"
+                                Height="22" 
+                                Margin="6,0,0,0" 
+                                VerticalAlignment="Center" 
+                                Width="61"/>
+                    </Grid>
+                </Border>
+                <Label 
+                            Content="Made By: TRX"
+                            FontFamily="Bahnschrift SemiBold"
+                            HorizontalAlignment="Center"
+                            Foreground="AliceBlue"
+                            FontSize="12"
+                            Height="22" 
+                            Margin="0,54,0,0" 
+                            VerticalAlignment="Top" 
+                            Width="168"/>
+                <Label 
+                    Content="C# WPF OPENSOUCE APP"
+                    FontFamily="Bahnschrift SemiBold"
+                    HorizontalAlignment="Center"
+                    Foreground="AliceBlue"
+                    FontSize="12"
+                    Height="22" 
+                    VerticalAlignment="Center" 
+                    Width="168"/>
+                <Label 
+                    Content=".NET FRAMEWORK 4.7.2"
+                    FontFamily="Bahnschrift SemiBold"
+                    HorizontalAlignment="Center"
+                    Foreground="#FF6AB9FF"
+                    FontSize="12"
+                    Height="22" 
+                    VerticalAlignment="Top" 
+                    Width="140" Margin="0,148,0,0"/>
+            </Grid>
+        </Border>
+
+    </Grid>
+</Window>
