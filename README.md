@@ -1,5 +1,5 @@
 # WinMaster
-# Hi There ✋ WinMaster is Program that help you setup your windows os
+# Hi There ✋ WinMaster is Program that help you and speed up setup your windows os
 # ⚡ Antivirus can detect WinMaster as Virus, It's false positive
 
 ![image](https://github.com/RaySoftworks/WinMaster/assets/130923455/85e76440-7876-4686-8a7c-8ffb17789f85)
